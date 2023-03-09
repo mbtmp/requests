@@ -1,3 +1,6 @@
-DF-M
-LOG
-UPGRADE
+
+UPGRADE help
+upgrade version deploy 1
+upgrade version list
+upgrade version show current
+
