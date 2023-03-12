@@ -1,1 +1,2 @@
-upgrade download package_v001
+# upgrade download PACKAGE_V001
+upgrade help
