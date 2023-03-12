@@ -1,5 +1,5 @@
 #upgrade help
-#upgrade download PACKAGE_V001
+upgrade download PACKAGE_V002
 #upgrade deploy 001
-upgrade version show current
-upgrade version list
+#upgrade version show current
+#upgrade version list
