@@ -1,6 +1,4 @@
-
-UPGRADE help
-upgrade version deploy 1
-upgrade version list
-upgrade version show current
-
+upgrade help
+#upgrade download PACKAGE_V001
+#upgrade version show current
+#upgrade version list
