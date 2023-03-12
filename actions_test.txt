@@ -1,2 +1,4 @@
 # upgrade download PACKAGE_V001
-upgrade help
+# upgrade help
+upgrade version show current
+upgrade version list
