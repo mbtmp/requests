@@ -1,5 +1,10 @@
 #upgrade help
-upgrade download PACKAGE_V002
-#upgrade deploy 001
+#upgrade download PACKAGE_V002
+upgrade deploy 002
 #upgrade version show current
 #upgrade version list
+
+#sys help
+#sys status
+#sys clear ffe
+#sys clear log
