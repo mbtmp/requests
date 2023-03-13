@@ -4,7 +4,7 @@
 upgrade version show current
 upgrade version list
 
-sys help
-sys status
-#sys clear ffe
-#sys clear log
+#sys help
+#sys status
+sys clear ffe
+sys clear log
