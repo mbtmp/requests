@@ -1,2 +1,6 @@
-00016  misses  [173]
-00022  misses  [28]
+00002  misses  [4]
+00173  misses  [4, 8]
+00180  misses  [0]
+00181  misses  [0]
+00214  misses  [98]
+00216  misses  [13]
