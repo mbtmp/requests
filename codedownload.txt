@@ -1,0 +1,72 @@
+import subprocess
+from datetime import datetime
+
+today_str = datetime.today().strftime('%Y-%m-%d')
+proj_url = 'https://bitbucketdc-cluster06.jpmchase.net/scm/spectrumui/'
+
+with open('repositories.txt') as file:
+    for line in file:
+        repo = line.rstrip()
+        cmd = f'git clone -b develop "{proj_url}/{repo}.git" "{repo}/dev-{today_str}"'
+        print(cmd)
+        subprocess.run(cmd, shell=True)
+        cmd = 'rmdir "' + repo + '/dev-' + today_str + '/.git" /s/q'
+        print(cmd)
+        subprocess.run(cmd, shell=True)
+
+        cmd = f'git clone -b master "{proj_url}/{repo}.git" "{repo}/master-{today_str}"'
+        print(cmd)
+        subprocess.run(cmd, shell=True)
+        cmd = 'rmdir "' + repo + '/master-' + today_str + '/.git" /s/q'
+        print(cmd)
+        subprocess.run(cmd, shell=True)
+
+
+"""
+git clone -b develop https://bitbucketdc-cluster07.jpmchase.net/scm/moneta/moneta-boot.git _moneta-boot_304
+cd _moneta-boot_304
+git checkout tags/3.0.4
+rmdir .git /s/q
+cd ..
+
+git clone -b develop https://bitbucketdc-cluster07.jpmchase.net/scm/moneta/moneta-bootstrap.git _moneta-bootstrap_525
+cd _moneta-bootstrap_525
+git checkout tags/5.2.5
+rmdir .git /s/q
+cd ..
+
+git clone -b develop https://bitbucketdc-cluster07.jpmchase.net/scm/moneta/moneta-boot.git _moneta-web-react_1810
+cd _moneta-web-react_1810
+git checkout tags/18.1.0
+rmdir .git /s/q
+cd ..
+"""
+
+
+
+-------------
+repositories.txt
+am-gpt	
+apigee-code-repo-mitra
+build-config	
+cloud-service-deploy-library	
+dragablz	
+jenkins-config	
+launch-app-inventory	
+rasa-playground	
+react-component-usage	
+recommendations	
+sds-connect-demo	
+spectrix	
+spectrum-alerts	
+spectrum-alerts-admin-service	
+spectrum-apigee	
+spectrum-app-service	
+spectrum-aws-batch	
+spectrum-aws-infrastructure	
+spectrum-aws-software	
+spectrum-bootstrap-style-guide-new	
+spectrum-bridge-testing	
+spectrum-build-library	
+spectrum-capabilities-site	
+spectrum-collections	
